@@ -15,7 +15,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v1
-      - run: npm install
+      - run: npm install --force
       - run: npm run build
       - name: Configure AWS Credentials 
         uses: aws-actions/configure-aws-credentials@v1
